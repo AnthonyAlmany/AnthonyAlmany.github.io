@@ -8,7 +8,7 @@ import reactLogo from "../style/Logos/REACT.svg"
 
 function Languages() {
     return (
-        <div className="skills-component">
+        <div className="skills-component" id="languages">
 
             <div className="languages-component flex-center-column">
 
@@ -43,7 +43,7 @@ function Languages() {
             </div>
             <div className="tools-component flex-center-column">
                 <h4>- Dev Tools -</h4>
-                <h4>Bootstrap / Material UI / Sass / React Router / Axios / Github</h4>
+                <h4 className="dev-list">Bootstrap / Material UI / Sass / React Router / Axios / Github</h4>
             </div>
 
         </div>

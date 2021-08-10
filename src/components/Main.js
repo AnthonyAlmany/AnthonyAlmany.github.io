@@ -12,13 +12,13 @@ function Main() {
 
     return (
         <div>
-            <main className="main-section">
-                <motion.h1 style={{ fontSize: "4rem" }} variants={variants} initial="hidden" animate="visible">
+            <main className="main-section" id="home">
+                <motion.span  variants={variants} initial="hidden" animate="visible">
                     Anthony Almany
-                </motion.h1>
-                <motion.h2 variants={variants} initial="hidden" animate="visible">
+                </motion.span>
+                <motion.span variants={variants} initial="hidden" animate="visible">
                     Front End Developer
-                </motion.h2>
+                </motion.span>
             </main>
         </div>
     )

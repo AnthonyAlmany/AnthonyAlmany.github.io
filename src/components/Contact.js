@@ -14,8 +14,11 @@ function Contact() {
         <div className="contact flex-center-column">
             <div className="contact-container flex-center">
                 <h4>Interested to get in touch and make life more responsive?</h4>
-                <motion.div className="contact-button" whileHover={{ scale: 1.1 }}>
-                    <Button variant="light" style={buttonStyle}>Let's do it!</Button>
+                <motion.div  whileHover={{ scale: 1.1 }}>
+                <div className="contact-button">
+                <Button variant="light" style={buttonStyle}>Let's do it!</Button>
+                </div>
+                  
                 </motion.div>
             </div>
 

@@ -7,13 +7,15 @@ import { motion } from "framer-motion"
 
 function Projects() {
     return (
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
             <div className="projects-title flex-center">
                 <h1>My projects</h1>
             </div>
             <div className="projects flex-center">
-                <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card style={{ width: '18rem' }} >
+                
+                    <div className="card">
+                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
+                    <Card >
                         <Card.Img variant="top" src={webProject} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -25,8 +27,10 @@ function Projects() {
                         </Card.Body>
                     </Card>
                 </motion.div>
-                <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card style={{ width: '18rem' }} >
+                    </div>
+                    <div className="card">
+                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
+                    <Card>
                         <Card.Img variant="top" src={webProject} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -38,8 +42,10 @@ function Projects() {
                         </Card.Body>
                     </Card>
                 </motion.div>
-                <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card style={{ width: '18rem' }} >
+                    </div>
+                    <div className="card">
+                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
+                    <Card>
                         <Card.Img variant="top" src={webProject} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -51,6 +57,7 @@ function Projects() {
                         </Card.Body>
                     </Card>
                 </motion.div>
+                    </div>
 
             </div>
         </div>
