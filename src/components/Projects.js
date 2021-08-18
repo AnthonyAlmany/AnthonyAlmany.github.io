@@ -23,6 +23,7 @@ function Projects() {
                     title = {item.title}
                     description = {item.description}
                     image = {item.image} 
+                    git ={item.git}
                     />
            
 
