@@ -7,20 +7,23 @@ const listProjects = [
         title: "Easy`Order",
         description: "Inventory and orders management WebApp used by hospitality business to place orders easily.",
         image: orderProject ,
-        git: "https://github.com/anthonyAnAn/EasyOrder"
+        git: "https://github.com/anthonyAnAn/EasyOrder",
+        view: "https://gifted-morse-f81260.netlify.app/",
     },
     {
         title: "Dash Api",
         description: "Scalable Api Dashboard WebApp using React, Axios and react-router.",
         image: apiProject,
-        git: "https://github.com/anthonyAnAn/Api-App"
+        git: "https://github.com/anthonyAnAn/Api-App",
+        view: "https://boring-ardinghelli-a81f27.netlify.app/",
 
     },
     {
         title: "Landing Page",
         description: "My landing page using React, react-router, bootstrap, react-scroll and framer-motion",
         image: landingPage,
-        git: "https://github.com/anthonyAnAn/LandingPage"
+        git: "https://github.com/anthonyAnAn/LandingPage",
+        view: "https://determined-meitner-597ebf.netlify.app/",
     }
 ]
 

@@ -5,7 +5,7 @@ import { Card, Button } from 'react-bootstrap';
 import { motion } from "framer-motion"
 
 
-function CardProject({title, description, image, git}) {
+function CardProject({title, description, image, git, view}) {
     return (
         <div className="card">
         <motion.div  className="card-project" whileHover={{ scale: 1.1 }}>
@@ -17,7 +17,7 @@ function CardProject({title, description, image, git}) {
                   {description}
                 </Card.Text>
                 <div id="flex-buttons">
-                <Button variant="primary" id="button-project">View Project</Button>
+                <Button variant="primary" id="button-project"><a href={view} target="_blank" rel="noopener noreferrer"> View Project </a></Button>
                 <Button variant="primary" id="button-project"> <a href={git} target="_blank" rel="noopener noreferrer"> View Git </a></Button>
                 </div>
        

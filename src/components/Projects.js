@@ -24,6 +24,7 @@ function Projects() {
                     description = {item.description}
                     image = {item.image} 
                     git ={item.git}
+                    view={item.view}
                     />
            
 
