@@ -13,9 +13,24 @@ body{
     background-color: #05080cf5;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #0f1113;
 
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(64, 68, 68);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+}
 
   
 /* Templates */
@@ -251,8 +266,24 @@ margin-bottom: 2rem;
 
 .card{
     width: 18rem;
+  
+    border:none;
 }
 
+#card-body{
+    background-color: rgb(243, 239, 245);
+    border-radius: calc(.25rem - 1px);
+
+}
+#flex-buttons{
+    display: flex;
+ justify-content: space-between;
+ 
+}
+#button-project{
+    background-color:  #7510F7;
+    border: none;
+}
 
 /* Contact */
 .contact{
@@ -381,10 +412,28 @@ margin-bottom: 2rem;
 
         }
         .card{
-            width: 16rem;
+            width: 18rem;
             height: 24rem;
             margin-bottom: 2rem;
         }
+        #flex-buttons{
+            height: 3rem;
+            display: flex;
+           
+            
+        }
+         #button-project{
+            width: 40%;
+            height: 2rem;
+            font-size: 0.8rem;
+        } 
+
+  
+
+      
+
+        
+
         .contact-container{
             width: 80%;
             text-align: center;
@@ -476,10 +525,23 @@ margin-bottom: 2rem;
         }
         .card{
             width: 16rem;
-            height: 24rem;
+            height: 28rem;
             margin-bottom: 1rem;
         }
-
+    
+        #flex-buttons{
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+         
+            justify-content: space-around;
+           
+        }
+         #button-project{
+            width: 60%;
+            height: 2.5rem;
+            font-size: 0.8rem;
+        } 
         .contact-container{
             width: 100%;
             text-align: center;

@@ -22,15 +22,18 @@ import "./style/style.css"
 import "./style/main-background.jpg"
 
 
+
 function App() {
 
   return (
     <Router>
+  
       <div className="App">
         <Navigation />
 
         <Switch>
           <Route path="/" exact>
+         
             <Main />
             <About />
             <BreakLine />
@@ -38,12 +41,14 @@ function App() {
             <BreakLine />
             <Projects />
             <Contact />
+     
           </Route>
           <Route path="/api/sendmail" exact>
             <Form />
           </Route>
         </Switch>
       </div>
+
     </Router>
 
   );

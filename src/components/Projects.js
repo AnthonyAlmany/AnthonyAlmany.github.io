@@ -1,11 +1,12 @@
-import React from 'react'
+import React  from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import webProject from "../style/main-background.jpg"
-import { Card, Button } from 'react-bootstrap';
-import { motion } from "framer-motion"
 
+
+import listProjects from '../ListProjects';
+import CardProject from './CardProject';
 
 function Projects() {
+
     return (
         <div className="projects-container" id="projects">
             <div className="projects-title flex-center">
@@ -13,52 +14,22 @@ function Projects() {
             </div>
             <div className="projects flex-center">
                 
-                    <div className="card">
-                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card >
-                        <Card.Img variant="top" src={webProject} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-                    </div>
-                    <div className="card">
-                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card>
-                        <Card.Img variant="top" src={webProject} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-                    </div>
-                    <div className="card">
-                    <motion.div className="card-project" whileHover={{ scale: 1.1 }}>
-                    <Card>
-                        <Card.Img variant="top" src={webProject} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-                    </div>
+                {listProjects.map(item => {
+                  
+                    return(
+                           
+                    <CardProject
+                    key = {item.description}
+                    title = {item.title}
+                    description = {item.description}
+                    image = {item.image} 
+                    />
+           
 
+                    )
+                })}
+          
+    
             </div>
         </div>
     )
