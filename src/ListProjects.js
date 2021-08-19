@@ -23,7 +23,7 @@ const listProjects = [
         description: "My landing page using React, react-router, bootstrap, react-scroll and framer-motion",
         image: landingPage,
         git: "https://github.com/anthonyAnAn/LandingPage",
-        view: "https://determined-meitner-597ebf.netlify.app/",
+        view: "https://infallible-ptolemy-d7196f.netlify.app/",
     }
 ]
 
