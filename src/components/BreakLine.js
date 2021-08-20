@@ -3,10 +3,8 @@ import React from 'react'
 
 function BreakLine() {
     return (
-        <div>
-            <div className="line-separate flex-center">
-                <div className="line"></div>
-            </div>
+        <div className="line-separate flex-center">
+            <div className="line"></div>
         </div>
     )
 }

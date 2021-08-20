@@ -4,10 +4,7 @@ import Line from "../component-line.png"
 
 function BrokenLine() {
   return (
-    <div>
       <img src={Line} width="100%" alt="foo"></img>
-    </div>
-
   );
 }
 

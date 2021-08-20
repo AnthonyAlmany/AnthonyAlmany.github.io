@@ -11,8 +11,7 @@ function Main() {
 
 
     return (
-        <div>
-            <main className="main-section" id="home">
+            <main className="main-section flex-center-column" id="home">
                 <motion.span  variants={variants} initial="hidden" animate="visible">
                     Anthony Almany
                 </motion.span>
@@ -20,7 +19,6 @@ function Main() {
                     Front End Developer
                 </motion.span>
             </main>
-        </div>
     )
 }
 

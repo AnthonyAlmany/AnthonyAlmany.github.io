@@ -12,38 +12,38 @@ function Languages() {
 
             <div className="languages-component flex-center-column">
 
-                <div className="languages-title">
+                <div className="languages-title flex-center">
                     <h1>What do I speak?</h1>
                 </div>
-                <div className="language-description">
-                    <h4>I have started my journey as developer by learning the trio Html / Css / Js </h4>
-                    <h4>then choosed to work on React as front end library.</h4>
+                <div className="language-description flex-center-column">
+                    <h2>I have started my journey as developer by learning the trio Html / Css / Js </h2>
+                    <h2>then choosed to work on React as front end library.</h2>
                 </div>
 
-                <div className="language-card">
-                    <div className="card-logo">
+                <div className="language-card flex-even">
+                    <div className="card-logo flex-center-column">
                         <img src={htmlLogo} alt="html" width="72px" height="72px"></img>
-                        <h4>HTML</h4>
+                        <h3>HTML</h3>
                     </div>
-                    <div className="card-logo">
+                    <div className="card-logo flex-center-column">
                         <img src={cssLogo} alt="css" width="72x" height="72px"></img>
-                        <h4>CSS</h4>
+                        <h3>CSS</h3>
                     </div>
 
-                    <div className="card-logo">
+                    <div className="card-logo flex-center-column">
                         <img src={jsLogo} alt="html" width="72px" height="72px"></img>
-                        <h4>JS</h4>
+                        <h3>JS</h3>
                     </div>
-                    <div className="card-logo">
+                    <div className="card-logo flex-center-column">
                         <img src={reactLogo} alt="css" width="72x" height="72px"></img>
-                        <h4>React</h4>
+                        <h3>React</h3>
                     </div>
 
                 </div>
             </div>
             <div className="tools-component flex-center-column">
-                <h4>- Dev Tools -</h4>
-                <h4 className="dev-list">Bootstrap / Material UI / Sass / React Router / Axios / Github</h4>
+                <h2>- Dev Tools -</h2>
+                <h2 className="dev-list">Bootstrap / Material UI / Sass / React Router / Axios / Github</h2>
             </div>
 
         </div>
