@@ -29,11 +29,11 @@ function App() {
     <Router>
   
       <div className="App">
-        <Navigation />
+     
 
         <Switch>
           <Route path="/" exact>
-         
+            <Navigation />
             <Main />
             <About />
             <BreakLine />
@@ -43,7 +43,7 @@ function App() {
             <Contact />
      
           </Route>
-          <Route path="/api/sendmail" exact>
+          <Route path="/Contact" exact>
             <Form />
           </Route>
         </Switch>

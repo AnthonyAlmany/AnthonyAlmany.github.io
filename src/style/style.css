@@ -33,8 +33,11 @@
 ::-webkit-scrollbar-thumb:hover{
     cursor: pointer;
 }
-
-
+@media screen and (max-width: 768px){
+    ::-webkit-scrollbar{
+   display: none;
+    }
+}
 
 
 
@@ -75,7 +78,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-    height: 8vh;
+    height: 6vh;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -151,7 +154,8 @@ background-size: cover;
 
 /* About section */
 .about{
-    height: 80vh;
+    height: 50rem;
+  
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -185,7 +189,7 @@ background-size: cover;
 
 /* Languages */
 .skills-component{
-    height: 60vh;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -259,6 +263,61 @@ background-size: cover;
     padding-top: 7px;
 }
 
+/* Form */
+.home-container{
+    height: 5rem;
+}
+#logo-form{
+    height: 45px;
+    width: 45px;
+    margin-top: 1.3rem;
+    margin-left: 2.5rem;
+}
+
+form{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.input-container :first-child{
+    padding-left: 1rem;
+    background: none;
+    outline: none;
+    color: var(--white);
+  
+}
+input{
+    margin: 1rem 0;  
+    border: 0;
+    border-bottom: 1px solid #804ac5;
+    width: calc(200px + (800 - 200) * ((100vw - 300px) / (1600 - 300)));
+}
+
+::placeholder{
+    color: var(--white);
+
+}
+
+textarea {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    min-height: 200px;
+    width: calc(220px + (1100 - 220) * ((100vw - 300px) / (1600 - 300)));
+    resize: none;
+    overflow-y: auto;
+    border: 1px solid #804ac5;
+    border-radius: 1rem;
+  }
+  #button-form{
+      margin-left: 5px;
+  }
+
+
 /* Line separate component */
 .line-separate{
     height: 0.5rem;
@@ -283,7 +342,7 @@ background-size: cover;
             width: 100%;
             height: auto;
             position: absolute;
-            top: 8vh;
+            top: 6vh;
             left: -100%;
             opacity: 0;
             transition: all 0.5s ease;
@@ -374,6 +433,12 @@ background-size: cover;
             margin-right: 0.4rem;
             font-size: 0.8rem;
         }
+
+        /* Form */
+        .form{
+            justify-content: flex-start;
+            margin-left: 3rem;
+        }
     } 
 
     @media screen and (max-width: 480px)  {
@@ -410,9 +475,6 @@ background-size: cover;
        .language-card{
            padding-top: 1rem;
        }  
-        .language-description {
-            display: none;
-        }
         .dev-list{
             text-align: center;
             margin-bottom: 3rem;

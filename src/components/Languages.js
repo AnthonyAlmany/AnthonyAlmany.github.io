@@ -16,7 +16,7 @@ function Languages() {
                     <h1>What do I speak?</h1>
                 </div>
                 <div className="language-description flex-center-column">
-                    <h2>I have started my journey as developer by learning the trio Html / Css / Js </h2>
+                    <h2>I have started my journey as developer by learning Html / Css / Js </h2>
                     <h2>then choosed to work on React as front end library.</h2>
                 </div>
 

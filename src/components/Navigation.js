@@ -23,41 +23,36 @@ function Navigation() {
        
           <div className="logo-container">
           <Scroll activeClass="home" to="home" spy={true} smooth={true}>
-          <Link to="/">  <button className="button-link"><Logo className="logo" /></button></Link>
+          <button className="button-link"><Logo className="logo" /></button>
             </Scroll>
           </div>
           <div className="links-nav">
           <ul className={click ? "nav-options active" : "nav-options"}>
 
-          <Scroll to="about" spy={true} smooth={true}>
-          <Link to="/">
+          <Scroll to="about" spy={true} smooth={true} offset={-40}>
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">About</button>
-            </li>
-            </Link>
+            </li> 
             </Scroll>
-            <Scroll to="languages" spy={true} smooth={true}>
-          <Link to="/">
+
+          <Scroll to="skills-component" spy={true} smooth={true} offset={-70}>
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Languages</button>
             </li>
-            </Link>
             </Scroll>
-            <Scroll to="projects" spy={true} smooth={true}>
-          <Link to="/">
+
+            <Scroll to="projects-container" spy={true} smooth={true} offset={-70}> 
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Projects</button>
             </li>
-            </Link>
             </Scroll>
-          <Link to="/api/sendmail">
+
+          <Link to="/Contact">
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Contact</button>
             </li>
             </Link>
   
-    
-
           </ul>
        
      
