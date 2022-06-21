@@ -11,6 +11,13 @@ const listProjects = [
         view: "https://gifted-morse-f81260.netlify.app/",
     },
     {
+        title: "Task Manager",
+        description: "Web App using React and Firebasefffffffffffffffff updating state of each task depending of their expiry date.",
+        image: landingPage,
+        git: "https://github.com/anthonyAnAn/LandingPage",
+        view: "https://infallible-ptolemy-d7196f.netlify.app/",
+    },
+    {
         title: "Dash Api",
         description: "Scalable Api Dashboard WebApp using React, Axios and react-router.",
         image: apiProject,
@@ -24,7 +31,8 @@ const listProjects = [
         image: landingPage,
         git: "https://github.com/anthonyAnAn/LandingPage",
         view: "https://infallible-ptolemy-d7196f.netlify.app/",
-    }
+    },
+
 ]
 
 export default listProjects;

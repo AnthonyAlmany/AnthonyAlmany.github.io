@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 function CardProject({title, description, image, git, view}) {
     return (
         <div className="card">
-        <motion.div  className="card-project" whileHover={{ scale: 1.1 }}>
+        <motion.div  className="card-project" whileHover={{ scale: 1.1,zIndex: 2 }}>
         <Card>
             <Card.Img variant="top" src={image}  />
             <Card.Body id="card-body">

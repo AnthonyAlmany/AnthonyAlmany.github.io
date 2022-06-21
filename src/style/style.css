@@ -154,7 +154,7 @@ background-size: cover;
 
 /* About section */
 .about{
-    height: 50rem;
+    height: 60rem;
   
     display: flex;
     justify-content: space-around;
@@ -227,7 +227,10 @@ background-size: cover;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .card{
+    margin-top: 1rem;
+    
     width: 18rem;
     border:none;
     background-color: var(--black); 
@@ -235,6 +238,10 @@ background-size: cover;
 #card-body{
     background-color: rgb(243, 239, 245);
     border-radius: calc(.25rem - 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15rem;
 }
 #flex-buttons{
     display: flex;
@@ -248,6 +255,7 @@ background-size: cover;
 /* Contact */
 .contact{
     height: 20vh;
+    margin-top: 2rem;
 }
 .contact-container{
     justify-content: space-evenly;
