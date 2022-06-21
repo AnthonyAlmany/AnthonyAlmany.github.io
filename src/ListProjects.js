@@ -11,7 +11,7 @@ const listProjects = [
         view: "https://gifted-morse-f81260.netlify.app/",
     },
     {
-        title: "Task Manager",
+        title: "Work in Progress",
         description: "Web App using React and Firebase updating state of each task depending of their expiry date.",
         image: landingPage,
         git: "https://github.com/anthonyAnAn/LandingPage",
@@ -30,7 +30,7 @@ const listProjects = [
         description: "My landing page using React, react-router, bootstrap, react-scroll and framer-motion",
         image: landingPage,
         git: "https://github.com/anthonyAnAn/LandingPage",
-        view: "https://infallible-ptolemy-d7196f.netlify.app/",
+        view: "https://anthonyalmany.netlify.app/",
     },
 
 ]
