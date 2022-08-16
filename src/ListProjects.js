@@ -1,6 +1,7 @@
 import orderProject from "./style/projects/order-project.png"
 import apiProject from "./style/projects/api-project.png"
 import landingPage from "./style/projects/main-background.jpg"
+import taskmanager from "./style/projects/task-project.png"
 
 const listProjects = [
     {
@@ -11,11 +12,11 @@ const listProjects = [
         view: "https://gifted-morse-f81260.netlify.app/",
     },
     {
-        title: "Work in Progress",
+        title: "Task Manager",
         description: "Web App using React and Firebase updating state of each task depending of their expiry date.",
-        image: landingPage,
-        git: "https://github.com/anthonyAnAn/LandingPage",
-        view: "https://infallible-ptolemy-d7196f.netlify.app/",
+        image: taskmanager,
+        git: "https://github.com/AnthonyAlmany/Task-Manager",
+        view: "https://marvelous-lily-c60d9b.netlify.app",
     },
     {
         title: "Dash Api",
