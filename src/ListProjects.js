@@ -13,7 +13,7 @@ const listProjects = [
     },
     {
         title: "Task Manager",
-        description: "Web App using React and Firebase updating state of each task depending of their expiry date.",
+        description: "Task management App using data stored on Firebase. States updated depending of each tasks properties.",
         image: taskmanager,
         git: "https://github.com/AnthonyAlmany/Task-Manager",
         view: "https://marvelous-lily-c60d9b.netlify.app",

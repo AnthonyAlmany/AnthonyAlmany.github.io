@@ -4,6 +4,7 @@ import htmlLogo from "../style/Logos/HTML.svg"
 import cssLogo from "../style/Logos/CSS.svg"
 import jsLogo from "../style/Logos/JS.svg"
 import reactLogo from "../style/Logos/REACT.svg"
+import typescriptLogo from "../style/Logos/Typescript.svg"
 
 
 function Languages() {
@@ -35,15 +36,19 @@ function Languages() {
                         <h3>JS</h3>
                     </div>
                     <div className="card-logo flex-center-column">
-                        <img src={reactLogo} alt="css" width="72x" height="72px"></img>
+                        <img src={reactLogo} alt="react" width="72x" height="72px"></img>
                         <h3>React</h3>
+                    </div>
+                    <div className="card-logo flex-center-column">
+                        <img src={typescriptLogo} alt="typescript" width="72x" height="72px"></img>
+                        <h3>TypeScript</h3>
                     </div>
 
                 </div>
             </div>
             <div className="tools-component flex-center-column">
-                <h2>- Dev Tools -</h2>
-                <h2 className="dev-list">Bootstrap / Material UI / Sass / React Router / Axios / Github</h2>
+                <h2>- Dev tools and libraries -</h2>
+                <h2 className="dev-list">Bootstrap / Sass / React Router / Axios / Git</h2>
             </div>
 
         </div>

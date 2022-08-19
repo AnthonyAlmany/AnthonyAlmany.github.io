@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter&display=swap');
 
 /* Templates */
 .flex-center{
@@ -45,7 +46,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    --white: rgb(244, 249, 253);
+    --white: rgb(218, 224, 228);
     --black: #0f1113;
 }
 
@@ -196,16 +197,21 @@ background-size: cover;
     color: var(--white);
 }
 .languages-title{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Andika', sans-serif;
+    margin-bottom: 1rem;
 }
 .language-description{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4rem;
 }
 .language-card{
     width: 50%;
 }
-
+.card-logo img{
+    width: calc(40px + (72 - 40) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(40px + (72 - 40) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 1rem;
+}
 .tools-component h4:first-child{
     padding-bottom: 1rem;
 }
@@ -219,7 +225,7 @@ background-size: cover;
 }
 .projects-title h1{
     color: var(--white);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Andika', sans-serif;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -487,6 +493,7 @@ textarea {
             margin-bottom: 5rem;
         }    
        .language-card{
+        width:80%;
            padding-top: 1rem;
        }  
         .dev-list{
