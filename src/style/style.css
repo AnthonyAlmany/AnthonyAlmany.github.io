@@ -145,7 +145,7 @@ font-family: 'Zen Tokyo Zoo', cursive;
     font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 .main-section{
-background-image: url("main-background.jpg");
+background-image: url("./assets/main-background.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -169,7 +169,7 @@ background-size: cover;
 .picture-container{
     height: 14rem;
     width: 14rem;
-    background-image: url("profile.jpg");
+    background-image: url("./assets/profile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

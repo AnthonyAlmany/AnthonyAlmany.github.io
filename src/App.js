@@ -19,7 +19,7 @@ import Form from "./components/Form"
 // Styles & Bootstrap
 
 import "./style/style.css"
-import "./style/main-background.jpg"
+import "./style/assets/main-background.jpg"
 
 
 
