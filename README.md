@@ -1,8 +1,8 @@
 # Landing Page
 
-This project is a landing to introduce my portofolio as front end developer.
+This project is a landing page to introduce my portofolio as front end developer.
 
-## Frameworks and libraries used
+## Frameworks and libraries used:
 
 - React
 - Bootstrap
