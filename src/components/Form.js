@@ -17,7 +17,7 @@ function Form() {
     function sendEmail(e) {
       e.preventDefault();
   
-      emailjs.sendForm('service_y9v324k', 'template_0u87dsg', e.target, 'user_YVjYJC7k2HrWeWxDyZUPP')
+      emailjs.sendForm('service_oel6v37', 'template_0u87dsg', e.target, 'user_YVjYJC7k2HrWeWxDyZUPP')
         .then((result) => {
             console.log(result.text);
            setResult(result.text)

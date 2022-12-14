@@ -8,11 +8,11 @@ function About() {
             <div className="about" id="about">
                 <div className="description-container">
                     <div className="description-title">
-                    <h2> &#8220; Hi, I'm Anthony! A front end developer.</h2>
+                    <h2> &#8220; Hi, I'm Anthony! A front-end developer in Sydney.</h2>
                     </div>
                     <div className="description">
-                    <h2>A simple curiosity which became a passion  to build projects from scratch.</h2>
-                    <h2>From a simple landing page to more complex Web Apps. &#8221;</h2>
+                    <h2>I specialize in React, Typescript, and Visual Development</h2>
+                    <h2>With a passion for building responsive products. &#8221;</h2>
                     </div>
            
                 </div>

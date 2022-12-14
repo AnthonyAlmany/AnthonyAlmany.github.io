@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Unbounded&display=swap');
+
 
 /* Templates */
 .flex-center{
@@ -139,10 +141,11 @@ h3{
 
 /* Main Section */
 main{
-font-family: 'Zen Tokyo Zoo', cursive;
+    font-family: 'Corinthia', cursive;
+    
     color: var(--white);
     height: 100vh;
-    font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(30px + (120 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 .main-section{
 background-image: url("./assets/main-background.jpg");
@@ -189,6 +192,7 @@ background-size: cover;
 }
 
 /* Languages */
+
 .skills-component{
     height: 50rem;
     display: flex;
@@ -197,7 +201,6 @@ background-size: cover;
     color: var(--white);
 }
 .languages-title{
-    font-family: 'Andika', sans-serif;
     margin-bottom: 1rem;
 }
 .language-description{
@@ -225,7 +228,6 @@ background-size: cover;
 }
 .projects-title h1{
     color: var(--white);
-    font-family: 'Andika', sans-serif;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
