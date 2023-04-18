@@ -1,0 +1,90 @@
+/* Projects */
+
+.projects-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Teko', sans-serif;
+}
+
+.projects-title h1 {
+    color: var(--white);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.card-project {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+img {
+    height: 18rem;
+    width: 26rem;
+    border-radius: 6px;
+}
+
+.card-description {
+    width: 40%;
+    color: var(--white);
+}
+
+.button-project {
+    background-color: #7510F7;
+    margin: 1rem 2rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: large;
+    border-radius: 2px;
+    font-family: 'Teko', sans-serif;
+}
+
+#git-logo-link {
+    height: 36px;
+    width: 36px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .projects-container {
+        height: initial;
+    }
+
+    .card-project {
+        flex-direction: column;
+    }
+
+    .card-description {
+        margin-top: 2rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .projects-container {
+        height: auto;
+    }
+
+    img {
+        height: 12rem;
+        width: 18rem;
+    }
+
+
+
+
+}

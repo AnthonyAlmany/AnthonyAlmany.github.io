@@ -1,30 +1,31 @@
 
 
 import React from 'react'
-import { Card, Button } from 'react-bootstrap';
-import { motion } from "framer-motion"
+import gitLogo from "../style/Logos/git.svg"
 
 
-function CardProject({title, description, image, git, view}) {
+
+
+function CardProject({ title, description, image, git, view, index }) {
     return (
-        <div className="card">
-        <motion.div  className="card-project" whileHover={{ scale: 1.1,zIndex: 2 }}>
-        <Card>
-            <Card.Img variant="top" src={image}  />
-            <Card.Body id="card-body">
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>
-                  {description}
-                </Card.Text>
-                <div id="flex-buttons">
-                <Button variant="primary" id="button-project"><a href={view} target="_blank" rel="noopener noreferrer"> View Project </a></Button>
-                <Button variant="primary" id="button-project"> <a href={git} target="_blank" rel="noopener noreferrer"> View Git </a></Button>
+        <div className={index % 2 === 1 ? "card-project flex-reverse" : "card-project"}>
+            <div className="image-project">
+                <img src={image} alt={title}></img>
+            </div>
+
+            <div className='card-description'>
+                <h2>{description}</h2>
+
+                <div className="link-buttons flex-center">
+                    <div className="button-project flex-center"><a href={view} > Project </a></div>
+                    <div> <a href={git} > <img src={gitLogo} alt="git" id="git-logo-link"></img> </a></div>
                 </div>
-       
-            </Card.Body>
-        </Card>
-        </motion.div>
-                   </div>
+            </div>
+
+
+
+
+        </div>
     )
 }
 

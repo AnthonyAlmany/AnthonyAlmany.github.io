@@ -1,0 +1,20 @@
+/* Main Section */
+main {
+    font-family: 'Teko', sans-serif;
+
+    color: rgb(213, 220, 225);
+    height: 60vh;
+    font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.main-section {
+    background-image: url("./assets/main-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#small-description {
+    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import "../style/main.css"
 
 function Main() {
 
@@ -11,14 +12,15 @@ function Main() {
 
 
     return (
-            <main className="main-section flex-center-column" id="home">
-                <motion.span  variants={variants} initial="hidden" animate="visible">
-                    Anthony Almany
-                </motion.span>
-                <motion.span variants={variants} initial="hidden" animate="visible">
-                    Front End Developer
-                </motion.span>
-            </main>
+        <main className="main-section flex-center-column" id="home">
+            <div className="main-text"></div>
+            <motion.span variants={variants} initial="hidden" animate="visible">
+                Anthony Almany
+            </motion.span>
+            <motion.span variants={variants} initial="hidden" animate="visible" id="small-description">
+                - Front End Developer -
+            </motion.span>
+        </main>
     )
 }
 

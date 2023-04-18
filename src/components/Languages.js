@@ -1,55 +1,56 @@
 import React from 'react'
 
-import htmlLogo from "../style/Logos/HTML.svg"
-import cssLogo from "../style/Logos/CSS.svg"
-import jsLogo from "../style/Logos/JS.svg"
-import reactLogo from "../style/Logos/REACT.svg"
-import typescriptLogo from "../style/Logos/Typescript.svg"
+import { frontStack, backStack, otherStack } from '../ListStacks'
+import "../style/languages.css"
 
 
 function Languages() {
+
     return (
         <div className="skills-component" id="languages">
 
             <div className="languages-component flex-center-column">
 
                 <div className="languages-title flex-center">
-                    <h1>What do I speak?</h1>
-                </div>
-                <div className="language-description flex-center-column">
-                    <h2>I have started my journey as developer by learning Html / Css / Js </h2>
-                    <h2>then choosed to work on React as front end library.</h2>
+                    <h1>- Tech Stack -</h1>
                 </div>
 
-                <div className="language-card flex-even">
-                    <div className="card-logo flex-center-column">
-                        <img src={htmlLogo} alt="html" width="72px" height="72px"></img>
-                        <h3>HTML</h3>
-                    </div>
-                    <div className="card-logo flex-center-column">
-                        <img src={cssLogo} alt="css" width="72x" height="72px"></img>
-                        <h3>CSS</h3>
-                    </div>
 
-                    <div className="card-logo flex-center-column">
-                        <img src={jsLogo} alt="html" width="72px" height="72px"></img>
-                        <h3>JS</h3>
+                <div className="language-card flex-column">
+                    <div className="stack">
+                        {frontStack.map((stack, i) => {
+                            return (
+                                <div key={i} className="card-logo flex-center-column">
+                                    <img src={stack.logo} alt={stack.name} width="62px" height="62px"></img>
+                                    <h3>{stack.name}</h3>
+                                </div>
+                            )
+                        })}
                     </div>
-                    <div className="card-logo flex-center-column">
-                        <img src={reactLogo} alt="react" width="72x" height="72px"></img>
-                        <h3>React</h3>
+                    <div className="stack flex-center ">
+                        {backStack.map((stack, i) => {
+                            return (
+                                <div key={i} className="card-logo flex-center-column back">
+                                    <img src={stack.logo} alt={stack.name} width="62px" height="62px"></img>
+                                    <h3>{stack.name}</h3>
+                                </div>
+                            )
+                        })}
                     </div>
-                    <div className="card-logo flex-center-column">
-                        <img src={typescriptLogo} alt="typescript" width="72x" height="72px"></img>
-                        <h3>TypeScript</h3>
+                    <div className="stack ">
+                        {otherStack.map((stack, i) => {
+                            return (
+                                <div key={i} className="card-logo flex-center-column">
+                                    <img src={stack.logo} alt={stack.name} width="62px" height="62px"></img>
+                                    <h3>{stack.name}</h3>
+                                </div>
+                            )
+                        })}
                     </div>
 
                 </div>
             </div>
-            <div className="tools-component flex-center-column">
-                <h2>- Dev tools and libraries -</h2>
-                <h2 className="dev-list">Bootstrap / Sass / React Router / Axios / Git</h2>
-            </div>
+
 
         </div>
     )

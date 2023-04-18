@@ -1,0 +1,59 @@
+/* Languages */
+
+.skills-component {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+.languages-title {
+    margin-bottom: 2rem;
+    font-family: 'Teko', sans-serif;
+}
+
+.language-description {
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 4rem;
+}
+
+.language-card {
+    width: 40%;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.back {
+    margin: 0 2rem;
+}
+
+.card-logo img {
+    width: calc(40px + (48 - 40) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(40px + (48 - 40) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .languages-component {
+        padding-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .language-card {
+        width: 80%;
+        padding-top: 1rem;
+    }
+
+    .dev-list {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+}

@@ -1,14 +1,15 @@
-import orderProject from "./style/projects/order-project.png"
+// import orderProject from "./style/projects/order-project.png"
 // import apiProject from "./style/projects/api-project.png"
 import landingPage from "./style/projects/main-background.jpg"
 import taskmanager from "./style/projects/task-project.png"
 import dashboard from "./style/projects/dashboard.png"
+import easyorder from "./style/projects/easyorder.PNG"
 
 const listProjects = [
     {
         title: "Easy`Order",
         description: "Inventory and orders management WebApp used by hospitality business to place orders easily.",
-        image: orderProject,
+        image: easyorder,
         git: "https://github.com/anthonyAnAn/EasyOrder",
         view: "https://gifted-morse-f81260.netlify.app/",
     },

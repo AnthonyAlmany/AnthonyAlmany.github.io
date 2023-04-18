@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer"
 
 
+
 function Wave() {
 
     const [element, view] = useInView({ threshold: 0.5, delay: 300 });

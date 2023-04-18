@@ -1,0 +1,132 @@
+/* Navbar */
+
+.header {
+    display: flex;
+    background-color: var(--black);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 6vh;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    color: var(--white);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.links-nav {
+    display: flex;
+}
+
+.links-nav ul {
+    margin-bottom: 0;
+}
+
+.nav-options {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+    list-style-type: none;
+}
+
+.button-link {
+    background: var(--black);
+    color: var(--white);
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.option {
+    color: var(--white);
+}
+
+.option :hover {
+    cursor: pointer;
+}
+
+.option button {
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0px 10px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-options {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 6vh;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        flex-direction: column;
+        list-style-type: none;
+        grid-gap: 0px;
+    }
+
+    .nav-options.active {
+        background-color: var(--black);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        align-content: center;
+        padding-left: 0px;
+    }
+
+    .menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        padding: 30px 0px;
+    }
+
+    .mobile-menu {
+        display: block;
+        color: var(--white);
+    }
+
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+}

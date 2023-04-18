@@ -1,61 +1,61 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import {
-    Link
+  Link
 } from "react-router-dom";
-import {Link as Scroll} from 'react-scroll'
+import { Link as Scroll } from 'react-scroll'
 
 
 
 import { ReactComponent as CloseMenu } from "../style/assets/x.svg";
 import { ReactComponent as MenuIcon } from "../style/assets/menu.svg";
 import { ReactComponent as Logo } from "../style/assets/logo.svg";
-
+import "../style/navigation.css"
 
 function Navigation() {
 
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-    return (
+  return (
 
-        <div className="header">
-       
-          <div className="logo-container">
-          <Scroll activeClass="home" to="home" spy={true} smooth={true}>
+    <div className="header">
+
+      <div className="logo-container">
+        <Scroll activeClass="home" to="home" spy={true} smooth={true}>
           <button className="button-link"><Logo className="logo" /></button>
-            </Scroll>
-          </div>
-          <div className="links-nav">
-          <ul className={click ? "nav-options active" : "nav-options"}>
+        </Scroll>
+      </div>
+      <div className="links-nav">
+        <ul className={click ? "nav-options active" : "nav-options"}>
 
           <Scroll to="about" spy={true} smooth={true} offset={-40}>
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">About</button>
-            </li> 
-            </Scroll>
+            </li>
+          </Scroll>
 
           <Scroll to="skills-component" spy={true} smooth={true} offset={-70}>
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Languages</button>
             </li>
-            </Scroll>
+          </Scroll>
 
-            <Scroll to="projects-container" spy={true} smooth={true} offset={-70}> 
+          <Scroll to="projects-container" spy={true} smooth={true} offset={-70}>
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Projects</button>
             </li>
-            </Scroll>
+          </Scroll>
 
           <Link to="/Contact">
             <li className="option" onClick={closeMobileMenu}>
               <button className="button-link">Contact</button>
             </li>
-            </Link>
-  
-          </ul>
-       
-     
+          </Link>
+
+        </ul>
+
+
         <div className="mobile-menu" onClick={handleClick}>
           {click ? (
             <CloseMenu className="menu-icon" />
@@ -63,10 +63,10 @@ function Navigation() {
             <MenuIcon className="menu-icon" />
           )}
         </div>
-        </div>
       </div>
-     
-    )
+    </div>
+
+  )
 }
 
 export default Navigation
