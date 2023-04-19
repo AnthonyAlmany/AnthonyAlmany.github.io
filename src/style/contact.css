@@ -21,6 +21,10 @@
     font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.contact-button button {
+    margin: 0 0 0 1rem;
+}
+
 @media screen and (max-width: 768px) {
     #contact {
         margin-left: 0;
@@ -37,7 +41,7 @@
     }
 
     .contact-button button {
-        margin-right: 0.4rem;
+        margin: 0 0.4rem 0 0;
         font-size: 0.8rem;
     }
 }

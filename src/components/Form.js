@@ -17,8 +17,9 @@ function Form() {
 
   function sendEmail(e) {
     e.preventDefault();
-
-    emailjs.sendForm('service_oel6v37', 'template_0u87dsg', e.target, 'user_YVjYJC7k2HrWeWxDyZUPP')
+    const service = process.env.REACT_APP_SERVICE;
+    const publicKey = process.env.REACT_APP_KEY;
+    emailjs.sendForm(`${service}`, 'template_blu9im5', e.target, `${publicKey}`)
       .then((result) => {
         console.log(result.text);
         setResult(result.text)
@@ -38,7 +39,7 @@ function Form() {
       <div className="form flex-center">
         <form action="index.html" autoComplete="off" onSubmit={sendEmail}>
           <div className="input-container">
-            <input type="text" name="name" className="input" placeholder="Name" required />
+            <input type="text" name="from_name" className="input" placeholder="Name" required />
           </div>
           <div className="input-container">
             <input type="email" name="email" className="input" placeholder="Email" required />
