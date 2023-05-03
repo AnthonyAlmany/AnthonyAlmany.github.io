@@ -26,20 +26,24 @@
 .card-project {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 4rem;
 }
 
 img {
-    height: 18rem;
-    width: 26rem;
+    height: calc(220px + (220 - 180) * ((100vw - 300px) / (1600 - 300)));
+    width: calc(280px + (280 - 200) * ((100vw - 300px) / (1600 - 300)));
     border-radius: 6px;
 }
 
 .card-description {
     width: 40%;
     color: var(--white);
+}
+
+.font-description {
+    font-size: calc(12px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .button-project {

@@ -14,7 +14,7 @@ function CardProject({ title, description, image, git, view, index }) {
             </div>
 
             <div className='card-description'>
-                <h2>{description}</h2>
+                <h2 className='font-description'>{description}</h2>
 
                 <div className="link-buttons flex-center">
                     <div className="button-project flex-center"><a href={view} > Project </a></div>

@@ -10,7 +10,7 @@ function Wave() {
 
     return (
         <div ref={element} className="wave">
-            <svg viewBox="10 10 600 248" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <svg viewBox="10 40 600 248" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <motion.path
                     initial={{ pathLength: 0, }}
                     animate={view && { pathLength: 1 }}
